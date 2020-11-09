@@ -34,9 +34,11 @@ body {
 
 .text-primary {
   color: black;
+  font-weight: bold;
 }
 h1 {
   margin-left: -5%;
+  font-weight: bold;
 }
 #navbar {
   display: flex;
@@ -56,10 +58,11 @@ h1 {
 }
 
 #navbar ul li a {
-  color: #fff;
+  color: black;
   margin: 0.25rem;
   padding: 0.75rem;
   text-decoration: none;
+  font-weight: bold;
 }
 #navbar ul li a:hover {
   background-color: brown;
@@ -70,18 +73,19 @@ h1 {
   display: flex;
   height: 88%;
   align-items: center;
+  font-weight: bold;
 }
 .col {
   flex-basis: 50%;
 }
 .colum {
   flex-basis: 50%;
-
   border: lightcoral;
 }
 h1 {
   color: white;
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: bold;
 }
 p {
   color: white;
@@ -101,20 +105,19 @@ p {
   margin: 10px 15px;
   background-position: center;
   background-size: cover;
-  transition: transform 0, 5s;
-}
-.card :hover {
-  transform: translateY(-10px);
 }
 
 h5 {
   color: #fff;
   text-shadow: 0 0 5px #999;
-  text-size-adjust: 20px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: -2rem;
 }
 .card p {
   text-shadow: 0 0 15px #000;
   font-size: 15px;
+  line-height: 1.5rem;
 }
 
 footer {
@@ -123,7 +126,7 @@ footer {
   list-style: none;
   justify-content: space-between;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-style: italic;
   padding-top: 1%;
   background-color: rgb(143, 19, 19);
@@ -149,6 +152,7 @@ footer h3 {
   color: black;
   margin-left: -15%;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .text-center {
@@ -299,10 +303,25 @@ footer h3 {
   padding-top: 1rem;
 }
 
+.contact {
+  border: 1px white solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+}
+.contact1 h2 {
+  text-align: center;
+  line-height: 2rem;
+}
+
 @media screen and (max-width: 1062px) {
   .container {
     width: 100%;
-    height: 140vh;
+    height: 160vh;
     background-image: url("pexels-rfstudio-3810832.jpg");
     background-position: center;
     background-size: cover;
@@ -342,6 +361,7 @@ footer h3 {
 
   .text-primary {
     margin-left: -1.5rem;
+    font-weight: bold;
   }
 
   #navbar ul {
@@ -351,7 +371,7 @@ footer h3 {
   }
 
   #navbar ul li a {
-    color: #fff;
+    color: black;
     margin: 0.25rem;
     padding: 0.75rem;
     text-decoration: none;
@@ -374,13 +394,13 @@ footer h3 {
     display: flex;
     flex-direction: column;
     padding-top: 13%;
-
     border: lightcoral;
   }
   h1 {
-    color: white;
+    color: black;
     font-size: 22px;
     margin-left: -1rem;
+    font-weight: bold;
   }
   p {
     color: white;
@@ -390,7 +410,7 @@ footer h3 {
   }
 
   .card {
-    width: 140px;
+    width: 150px;
     height: 130px;
     display: inline-block;
     border-radius: 20px;
@@ -401,21 +421,19 @@ footer h3 {
     margin: 10px 150px;
     background-position: center;
     background-size: cover;
-    transition: transform 0, 3s;
-  }
-  .card :hover {
-    transform: translateY(-20px);
   }
 
   h5 {
     color: #fff;
     text-shadow: 0 0 5px #999;
-    text-size-adjust: 13px;
-    margin-top: -2.5rem;
+    font-size: 80%;
+    margin-top: -2.1rem;
+    line-height: 1rem;
   }
   .card p {
     text-shadow: 0 0 13px #000;
-    font-size: 10px;
+    font-size: 12px;
+    line-height: 1rem;
   }
 
   footer {
@@ -608,5 +626,20 @@ footer h3 {
     margin-left: 5%;
     padding-bottom: 1rem;
     padding-top: 1rem;
+  }
+
+  .contact {
+    border: 1px white solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+  }
+  .contact1 h2 {
+    text-align: center;
+    line-height: 2rem;
   }
 }
