@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 body {
-  line-height: 1.5;
+  line-height: 2rem;
   background-color: rgb(143, 19, 19);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-image: url("pexels-rfstudio-3810832.jpg");
   background-position: center;
   background-size: cover;
@@ -24,8 +24,6 @@ body {
   height: 200vh;
   background-position: center;
   background-size: cover;
-  padding-left: 0%;
-  padding-right: 0%;
   padding-top: 5%;
   box-sizing: border-box;
   background-color: rgb(143, 19, 19);
@@ -47,6 +45,8 @@ h1 {
   padding: 1rem;
   z-index: 1;
   background-color: white;
+  width: 120%;
+  margin-left: -6rem;
 }
 
 #navbar ul {
@@ -71,21 +71,25 @@ h1 {
 }
 .row {
   display: flex;
-  height: 88%;
+  height: 80%;
   align-items: center;
   font-weight: bold;
 }
+.col {
+  padding-top: 6rem;
+  padding-left: 17rem;
+}
 
 .col h1 {
-  color: brown;
-  font-size: 38px;
+  color: white;
+  font-size: 40px;
   font-weight: bold;
-  padding-right: 4rem;
+  line-height: 3rem;
 }
 p {
   color: white;
-  font-size: 20px;
-  line-height: 15px;
+  font-size: 23px;
+  line-height: 27px;
 }
 
 footer {
@@ -150,13 +154,13 @@ footer h3 {
 }
 .articl {
   text-align: justify;
-  margin-right: 0.2rem;
+  margin-right: 0.5rem;
   margin-left: 0.1rem;
   line-height: 1rem;
 }
 
 .articl p {
-  font-size: 90%;
+  font-size: 100%;
   text-align: justify;
   line-height: 1.5rem;
 }
@@ -174,9 +178,7 @@ footer h3 {
   text-align: center;
   justify-content: center;
   align-items: center;
-  left: 0;
-  right: 0;
-  bottom: 0px;
+  padding-top: 5rem;
 }
 
 .inform-img {
@@ -192,6 +194,7 @@ footer h3 {
   line-height: 1.5rem;
   text-align: justify;
   width: 100%;
+  font-size: 1rem;
 }
 
 .inform-text {
@@ -209,7 +212,6 @@ footer h3 {
   align-items: center;
   left: 0;
   right: 0;
-  bottom: 0px;
 }
 
 .inform-img1 {
@@ -227,6 +229,7 @@ footer h3 {
   line-height: 1.5rem;
   text-align: justify;
   width: 100%;
+  font-size: 1rem;
 }
 
 .inform-text1 {
@@ -260,14 +263,15 @@ footer h3 {
   padding: 1rem;
   line-height: 1.5rem;
   text-align: justify;
-  width: 100%;
+  width: 110%;
+  font-size: 1rem;
 }
 
 .inform-text2 {
   color: black;
   margin-left: 5%;
   padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .contact {
@@ -286,10 +290,10 @@ footer h3 {
   line-height: 2rem;
 }
 
-@media screen and (max-width: 1062px) {
+@media screen and (max-width: 900px) {
   .container {
     width: 100%;
-    height: 160vh;
+    height: 90vh;
     background-image: url("pexels-rfstudio-3810832.jpg");
     background-position: center;
     background-size: cover;
@@ -300,21 +304,21 @@ footer h3 {
   }
   .container2 {
     width: 100%;
-    height: 200vh;
+    height: 180vh;
     background-position: center;
     background-size: cover;
     padding-left: 8%;
     padding-right: 8%;
-    padding-top: 5%;
+    padding-top: 9%;
     box-sizing: border-box;
     background-color: rgb(143, 19, 19);
   }
 
   .text-primary {
-    color: black;
-  }
-  h1 {
+    color: brown;
     margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
   }
   #navbar {
     display: flex;
@@ -322,140 +326,52 @@ footer h3 {
     top: 0;
     color: rgb(192, 164, 164);
     justify-content: space-between;
-    padding: 0.5rem;
-    width: 110%;
-    z-index: 6;
-  }
-
-  .text-primary {
-    margin-left: -1.5rem;
-    font-weight: bold;
+    padding: 0.6rem;
+    width: 120%;
+    z-index: 1;
+    margin-left: -2.3rem;
   }
 
   #navbar ul {
     display: flex;
     list-style: none;
     align-items: center;
+    font-size: 0.8rem;
   }
 
   #navbar ul li a {
     color: black;
-    margin: 0.25rem;
-    padding: 0.75rem;
+    margin: 0.22rem;
+    padding: 0.65rem;
     text-decoration: none;
   }
   #navbar ul li a:hover {
     background-color: brown;
-    border-radius: 5px;
+    border-radius: 3px;
   }
 
   .row {
     display: flex;
-    height: 80%;
-    align-items: center;
+    height: 70%;
   }
-  .col {
-    flex-basis: 30%;
-  }
-  .colum {
-    flex-basis: 20%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 13%;
-    border: lightcoral;
-  }
+
   h1 {
     color: black;
-    font-size: 22px;
-    margin-left: -1rem;
+    font-size: 15px;
+    margin-left: -0.5rem;
     font-weight: bold;
+  }
+  .col {
+    margin-left: -11rem;
+  }
+  .col h1 {
+    font-size: 24px;
   }
   p {
     color: white;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 15px;
+    line-height: 13px;
     margin-bottom: 3rem;
-  }
-
-  .card {
-    width: 150px;
-    height: 130px;
-    display: inline-block;
-    border-radius: 20px;
-    padding: 15px 25px;
-    box-sizing: border-box;
-    background: url("he.jpg");
-    cursor: pointer;
-    margin: 10px 150px;
-    background-position: center;
-    background-size: cover;
-  }
-
-  h5 {
-    color: #fff;
-    text-shadow: 0 0 5px #999;
-    font-size: 80%;
-    margin-top: -2.1rem;
-    line-height: 1rem;
-  }
-  .card p {
-    text-shadow: 0 0 13px #000;
-    font-size: 12px;
-    line-height: 1rem;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-between;
-    padding: 10px;
-    font-size: 12px;
-    font-style: italic;
-    padding-top: 1%;
-    background-color: rgb(143, 19, 19);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
-    padding-bottom: 5rem;
-    line-height: 20px;
-  }
-
-  .par-footer {
-    margin-right: 5%;
-    margin-top: 1%;
-    margin-left: 5%;
-  }
-
-  .list-footer {
-    margin-top: 5%;
-    margin-left: 15%;
-    text-align: center;
-    line-height: 2rem;
-  }
-  footer h3 {
-    color: black;
-    margin-left: -15%;
-    margin-bottom: 1rem;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    letter-spacing: px;
-  }
-
-  .text-center {
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    text-align: center;
-    padding-top: 1rem;
-  }
-
-  .continer1 {
-    display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
-    align-items: center;
-    padding: 3rem;
   }
 
   .item {
@@ -494,16 +410,14 @@ footer h3 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    left: 0;
-    right: 0;
-    bottom: 0px;
+    padding-top: 8rem;
   }
 
   #inform h2 {
     font-size: 1rem;
   }
   .inform-img {
-    margin-left: -1rem;
+    margin-left: -2.5rem;
     padding-top: 1rem;
   }
 
@@ -519,7 +433,7 @@ footer h3 {
   .inform-text {
     color: black;
     margin-left: 5%;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     padding-top: 1rem;
   }
 
@@ -529,18 +443,13 @@ footer h3 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    left: 0;
-    right: 0;
-    bottom: 0px;
   }
 
   #inform1 h2 {
     font-size: 1rem;
   }
-
   .inform-img1 {
-    height: 20%;
-    padding-top: 2rem;
+    margin-left: -3rem;
   }
 
   .inform-text1 p {
@@ -602,12 +511,64 @@ footer h3 {
     flex-direction: column;
     align-items: center;
     font-size: 0.7rem;
-    padding: 1rem;
+    padding: 2rem;
     background-color: white;
     margin: 1rem;
+    line-height: 1.3rem;
+    padding-bottom: 1rem;
   }
   .contact1 h2 {
     text-align: center;
     line-height: 2rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 13px;
+    padding-top: 1%;
+    background-color: rgb(143, 19, 19);
+    color: white;
+    letter-spacing: 1px;
+    padding-bottom: 5rem;
+    line-height: 20px;
+  }
+
+  .par-footer {
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+
+  .list-footer {
+    margin-top: 5%;
+    margin-left: 15%;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  footer h3 {
+    color: black;
+    margin-left: -13%;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .text-center {
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .continer1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    align-items: center;
+    padding: 3rem;
   }
 }
